@@ -1,8 +1,5 @@
 pipeline { 
     agent { label ' linux'} 
-    options { 
-      buildDiscarder( logRotator(numTOKeepStr: '5'))
-      }
     environment {
     DOCKERHUB_CREDENTIALS = credentials('prashola-dockerhub') 
     }
