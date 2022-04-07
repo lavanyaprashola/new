@@ -20,7 +20,7 @@ pipeline {
         }
         stage( 'Push'){ 
        steps { 
-        sh 'docker push prashola/demo1:latest" 
+        sh 'docker push prashola/demo1:latest'
         }
        }
       }
