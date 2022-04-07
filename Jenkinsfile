@@ -3,7 +3,7 @@ pipeline {
     environment {
     DOCKERHUB_CREDENTIALS = credentials('prashola-dockerhub') 
     }
-        }
+    stages {
          stage( 'Login') { 
           steps{
           sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u SDOCKERHUB_CREDENTIALS_USR --password-stdin' 
