@@ -11,7 +11,7 @@ pipeline {
         }
         stage( 'Push'){ 
        steps { 
-        sh 'docker push prashola/mickeymouse:1.0'
+        sh 'docker push prashola/mickeymouse:latest'
         }
        }
       }
